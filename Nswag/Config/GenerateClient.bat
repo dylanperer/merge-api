@@ -1,1 +1,1 @@
-openapi-generator-cli generate -i spec.json -g dart -o generated_dart_client
+openapi-generator-cli generate -i spec.json -g dart -o ../src/generated_dart_client
