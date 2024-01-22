@@ -49,7 +49,7 @@ public struct RefreshTokenCommand : IRequest<Result<AuthenticationDto>>
             {
                 return new ValidationException(ExceptionsConstants.InvalidRefreshToken)
                     .ToResult<AuthenticationDto>();
-            }
+            } 
 
             validRefreshTokenCandidate.Status = Status.Deleted;
             await _postgresDbContext.SaveChangesAsync(cancellationToken);
